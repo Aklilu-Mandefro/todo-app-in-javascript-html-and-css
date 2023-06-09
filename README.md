@@ -26,8 +26,8 @@ create a pull request. You can also simply open an issue with the tag
 
 ## Raise An Issue
   <p align="left">
-    <a href="https://github.com/Aklilu-Mandefro/to-app-in-javascript-html-and-css/issues">Request Feature</a><br>
-    <a href="https://github.com/Aklilu-Mandefro/to-app-in-javascript-html-and-css/issues">Report Bug</a>
+    <a href="https://github.com/Aklilu-Mandefro/todo-app-in-javascript-html-and-css/issues">Request Feature</a><br>
+    <a href="https://github.com/Aklilu-Mandefro/todo-app-in-javascript-html-and-css/issues">Report Bug</a>
   </p>
   
   <br>
