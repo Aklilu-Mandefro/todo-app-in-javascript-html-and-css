@@ -1,4 +1,4 @@
-# Todo-App-in-javascript-html-and-css
+# TODO App in javascript html and css
 
 This is a simple todo application made with HTML, CSS and Javascript
 
