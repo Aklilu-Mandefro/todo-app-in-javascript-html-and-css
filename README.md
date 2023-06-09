@@ -7,7 +7,7 @@ running the todo app is very simple - just open index.html in your browser.
 
 ## Preview of the TODO App
 
-<img src="https://i.imgur.com/lhWAtPR.png"/>
+<img src="https://i.imgur.com/lhWAtPR.png"/> <img src="https://i.imgur.com/3TlcB9q.gif"/>
 
 ## Contribute to this project
 
