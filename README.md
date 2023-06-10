@@ -3,7 +3,7 @@
 This is a simple todo application made with HTML, CSS and Javascript
 
 ### How to run the App
-running the todo app is very simple - just open index.html in your browser. 
+running the todo app is very simple - just open the `index.html` file in your browser. 
 
 ## Preview of the TODO App
 
