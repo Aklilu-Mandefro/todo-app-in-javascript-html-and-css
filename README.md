@@ -9,6 +9,8 @@ running the todo app is very simple - just open the `index.html` file in your br
 
 <img src="https://i.imgur.com/lhWAtPR.png"/> <br> <br> <img src="https://i.imgur.com/3TlcB9q.gif"/>
 
+<h1 align="center"><a href="https://todo-app-by-aklilu-mandefro.netlify.app/">Live Demo of the TODO App</a></h1>
+
 ## Contribute to this project
 
 Thank you for browsing this repo. Any contributions you make are **greatly
