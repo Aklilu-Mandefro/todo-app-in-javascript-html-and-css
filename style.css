@@ -77,12 +77,14 @@ background-color: rgb(25, 25, 25);
 color: white;
 font-family: Arial;
 height: 30px;
-padding-top: 20px;
-padding-bottom: 15px;
+padding-top: 30px;
+padding-bottom: 25px;
+  text-align: center;
 }
 
 a{
   text-decoration: none;
+ color: rgb(25, 25, 25);
 }
 
 a:hover{
