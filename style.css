@@ -91,3 +91,8 @@ a:hover{
   text-decoration: underline;
   color: #abcea1;
 }
+
+.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}

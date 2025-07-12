@@ -11,24 +11,24 @@ form.addEventListener("submit", (e) => {
   formValidation();
 });
 
+// Validate Other Fields: added validation for due date and description
 let formValidation = () => {
-  if (textInput.value === "") {
-    console.log("failure");
-    msg.innerHTML = "Task cannot be blank";
-  } else {
-    console.log("success");
-    msg.innerHTML = "";
-    acceptData();
-    add.setAttribute("data-bs-dismiss", "modal");
-    add.click();
-
-    (() => {
-      add.setAttribute("data-bs-dismiss", "");
-    })();
+  if (textInput.value === "" || dateInput.value === "" || textarea.value === "") {
+    msg.innerHTML = "All fields are required";
+    msg.style.color = "red";
+    return;
   }
+  msg.innerHTML = "";
+  acceptData();
+  add.setAttribute("data-bs-dismiss", "modal");
+  add.click();
+  (() => {
+    add.setAttribute("data-bs-dismiss", "");
+  })();
 };
 
-let data = [{}];
+//Prevents Storing Empty Initial Object
+let data = JSON.parse(localStorage.getItem("data")) || [];
 
 let acceptData = () => {
   data.push({
@@ -43,8 +43,15 @@ let acceptData = () => {
   createTasks();
 };
 
+// Toggle Complete Functionality
+// This function toggles the completed state of a task when the check icon is clicked.
+function toggleComplete(e) {
+  e.parentElement.parentElement.classList.toggle("completed");
+}
+
 let createTasks = () => {
   tasks.innerHTML = "";
+  data.sort((a, b) => new Date(a.date) - new Date(b.date));
   data.map((x, y) => {
     return (tasks.innerHTML += `
     <div id=${y}>
@@ -55,6 +62,7 @@ let createTasks = () => {
           <span class="options">
             <i onClick= "editTask(this)" data-bs-toggle="modal" data-bs-target="#form" class="fas fa-edit"></i>
             <i onClick ="deleteTask(this);createTasks()" class="fas fa-trash-alt"></i>
+            <i onClick="toggleComplete(this)" class="fas fa-check-circle text-success me-2"></i>
           </span>
         </div>
     `);
@@ -92,3 +100,9 @@ let resetForm = () => {
   console.log(data);
   createTasks();
 })();
+
+function clearAll() {
+  data = [];
+  localStorage.removeItem("data");
+  createTasks();
+}
